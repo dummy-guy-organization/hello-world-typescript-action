@@ -21,3 +21,4 @@ jobs:
       - run: |
           echo build
           echo hi guy im naor
+          echo i heard that you removed the pipeline
